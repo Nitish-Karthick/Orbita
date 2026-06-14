@@ -1,4 +1,4 @@
-<img width="808" height="441" alt="image" src="https://github.com/user-attachments/assets/8c5ce9b8-0af4-4651-a201-38cf8f56d33f" /># 🛰️ PROJECT ORBITA (FAR AWAY 2026 MVP)
+# 🛰️ PROJECT ORBITA (FAR AWAY 2026 MVP)
 **Distributed Orbital Environmental Intelligence Network for LNT Debris (1 mm – 10 cm)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
