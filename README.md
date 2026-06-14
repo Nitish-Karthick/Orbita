@@ -67,6 +67,8 @@ We have containerized the startup process so judges can launch the full React + 
 ### 🎬 3D Model Video
 
 
-Uploading WhatsApp Video 2026-06-13 at 11.19.23 PM.mp4…
+https://github.com/user-attachments/assets/9e597045-a9c1-43fd-bfa3-70086040aba3
+
+
 
 
