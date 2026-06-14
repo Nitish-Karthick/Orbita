@@ -45,6 +45,8 @@ const ALERT_MAP = {
 };
 
 const MissionControl = () => {
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+
   const [telemetry, setTelemetry] = useState({
     grid_sector: "4G-ALPHA",
     hazard_density: 0,
@@ -83,7 +85,7 @@ const MissionControl = () => {
   useEffect(() => {
     const fetchTelemetry = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/telemetry');
+        const response = await fetch(`${API_BASE_URL}/api/telemetry`);
         if (response.ok) {
           const data = await response.json();
           setTelemetry(data);
@@ -108,7 +110,7 @@ const MissionControl = () => {
   const handleAcousticTrigger = async () => {
     addLog("Sending manual trigger request...", "normal");
     try {
-      const response = await fetch('http://localhost:8000/api/trigger', {
+      const response = await fetch(`${API_BASE_URL}/api/trigger`, {
         method: 'POST'
       });
       if (response.ok) {
@@ -222,7 +224,7 @@ const MissionControl = () => {
                 {/* Video Placeholder Area */}
                 <div className="flex-1 flex items-center justify-center relative">
                   <img 
-                    src={opticalStatus === 'ACTIVE' ? "http://localhost:8000/api/video_feed" : ""} 
+                    src={opticalStatus === 'ACTIVE' ? `${API_BASE_URL}/api/video_feed` : ""} 
                     alt="Optical Feed" 
                     className={`absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-screen ${opticalStatus === 'ACTIVE' ? 'block' : 'hidden'}`} 
                   />
