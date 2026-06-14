@@ -1,4 +1,4 @@
-# 🛰️ PROJECT ORBITA (FAR AWAY 2026 MVP)
+<img width="808" height="441" alt="image" src="https://github.com/user-attachments/assets/8c5ce9b8-0af4-4651-a201-38cf8f56d33f" /># 🛰️ PROJECT ORBITA (FAR AWAY 2026 MVP)
 **Distributed Orbital Environmental Intelligence Network for LNT Debris (1 mm – 10 cm)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -16,33 +16,8 @@ ORBITA is an edge-sensing payload architecture designed to map the Lethal Non-Tr
 ## 🏗️ Systems Architecture & Pipeline
 
 ORBITA operates entirely independently of terrestrial radar triggers, utilizing a 4-stage autonomous edge-compute loop.
+<img width="894" height="596" alt="image" src="https://github.com/user-attachments/assets/6bba688e-a8e8-487f-94d2-adf48713bae8" />
 
-```mermaid
-graph LR
-    %% Styling
-    classDef hardware fill:#0f4c81,stroke:#fff,stroke-width:1px,color:#fff,rx:4px;
-    classDef software fill:#206a5d,stroke:#fff,stroke-width:1px,color:#fff,rx:4px;
-    classDef data fill:#e4a11b,stroke:#fff,stroke-width:1px,color:#111,rx:4px;
-
-    %% Nodes
-    Impact((LNT<br>Impact)):::hardware
-    PZT[Piezo Acoustic<br>Waveguide]:::hardware
-    FFT[Edge FFT<br>Classifier]:::software
-    Cam[Dual CMOS<br>Optical Burst]:::hardware
-    CV[StereoSGBM &<br>YOLOv8 Edge]:::software
-    Risk[Hazard Risk<br>Heuristic]:::software
-    CBOR[CBOR + ECDSA<br>Telemetry]:::data
-    Downlink((Constellation<br>Downlink)):::data
-
-    %% Flow
-    Impact -- "High-Freq Vibration" --> PZT
-    PZT -- "Analog Signal" --> FFT
-    FFT -- "Wake < 50ms" --> Cam
-    Cam -- "120fps Burst" --> CV
-    CV -- "Depth (Z < 100m)" --> Risk
-    Risk -- "Anonymized Grid Data" --> CBOR
-    CBOR -- "~100 Bytes" --> Downlink
-```
 
 ### The 4 Core Layers:
 1. **Acoustic Wake-Up (< 1.0W)**: Piezo waveguide tape detects hypervelocity impacts. An FPGA runs an FFT to filter out mechanical noise.
@@ -89,5 +64,9 @@ We have containerized the startup process so judges can launch the full React + 
 
 ---
 
-### 🎬 Demo Video
-*(Embed your screen recording / demo video here before submission!)*
+### 🎬 3D Model Video
+
+
+Uploading WhatsApp Video 2026-06-13 at 11.19.23 PM.mp4…
+
+
