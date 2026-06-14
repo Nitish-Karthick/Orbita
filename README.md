@@ -10,7 +10,9 @@
 
 ## 🌌 Mission Statement
 ORBITA is an edge-sensing payload architecture designed to map the Lethal Non-Trackable (LNT) space debris regime. It transforms host satellites from passive assets into active, distributed sensing nodes. By fusing high-frequency acoustic impact detection with localized 3D stereoscopic mapping, ORBITA generates the first large-scale statistical hazard maps of the sub-10 cm orbital environment.
-
+##  Live Deployment:
+Backend:https://orbita-ceo0.onrender.com
+Frontend:https://orbitaexp.netlify.app
 ---
 
 ## 🏗️ Systems Architecture & Pipeline
