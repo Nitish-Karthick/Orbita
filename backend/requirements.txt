@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+opencv-python
+ultralytics
+numpy
+sgp4
+cbor2
+ecdsa

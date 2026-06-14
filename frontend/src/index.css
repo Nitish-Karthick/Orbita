@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hud-border {
+      position: relative;
+      border: 1px solid theme('colors.outline-variant');
+      background-color: theme('colors.surface-container');
+  }
+
+  .hud-border::before,
+  .hud-border::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border: 1px solid theme('colors.primary');
+      opacity: 0.5;
+      pointer-events: none;
+  }
+
+  .hud-border::before {
+      top: -1px;
+      left: -1px;
+      border-right: none;
+      border-bottom: none;
+  }
+
+  .hud-border::after {
+      bottom: -1px;
+      right: -1px;
+      border-left: none;
+      border-top: none;
+  }
+
+  .scanline {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1));
+      background-size: 100% 4px;
+      pointer-events: none;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+      width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+      background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+      background: theme('colors.outline-variant');
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+      background: theme('colors.outline');
+  }
+}
